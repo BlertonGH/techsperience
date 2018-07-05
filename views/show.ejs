@@ -1,0 +1,49 @@
+<% include partials/header %>
+
+<div class="row">
+  <div class="container-fluid">
+    <div class="col-12 table-content">
+      <h3 id="kontrata-heading">Kontratat</h3>
+      <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nr.rendor</th>
+          <th>LL.prokurimit</th>
+          <th>Aktiviteti Prokurimit</th>
+          <th>Data e inicimit</th>
+          <th>Data e publikimit</th>
+          <th>Data e nenshkrimit</th>
+          <th colspan="2">Afatet per implementim</th>
+          <th>Data e permbylles</th>
+          <th>Cmimi i kontrates</th>
+          <th>Cmimi total</th>
+          <th>Emri dhe mbiemri</th>
+          <th colspan="3"> Edit - Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <% for(let contract of contracts) { %>
+            <td><%= contract.nrprokurimit %></td>
+            <td><%= contract.llojiprokurimit %></td>
+            <td><%= contract.aktivitetiprokurimit %></td>
+            <td><%= contract.datainicimit %></td>
+            <td><%= contract.datapublikimit %></td>
+            <td><%= contract.datanenshkrimit %></td>
+            <td><%= contract.afatiimplementimit %></td>
+            <td><%= contract.aafatiimplementimit %></td>
+            <td><%= contract.datapermbylljes %></td>
+            <td><%= contract.cmimikontrates %></td>
+            <td><%= contract.cmimitotal %></td>
+            <td><%= contract.emrikontrates %></td>
+            <td><a href="/projekt/<%= projekt._id %>">Show </a></td>
+            <td><a href="/projekt/edit/<%= projekt._id %>">Edit</a></td>
+            <td><a href="/projekt/delete/<%= projekt._id %>">Delete </a></td>
+          </tr>
+            <% } %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<% include partials/footer %>

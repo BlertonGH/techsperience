@@ -1,0 +1,91 @@
+<% include partials/header %>
+    <div class="row">
+      <div class="container">
+        <div class="col-12">
+            <div class="form-content">
+              <h1 id="kontrata-heading">Shto kontraten e re</h1>
+              <form action="/projekt/add" method="POST">
+                <!-- From for first part :Prokurimi -->
+
+                <!-- Duhet me ia shtu name atributet -->
+                  <div class="form-row prokurimi">
+                    <div class="form-group col-12">
+                      <h2>Porkurimi:</h2>
+
+                    </div>
+                    <div class="form-group col-12 col-lg-6">
+                      <label for="nrprokurimit">Nr.rendor i prokurimit</label>
+                      <input type="text" class="form-control" name="nrprokurimit" id="nrprokurimit" placeholder="Nr. rendor i prokurimit"  required>
+                    </div>
+                    <div class="form-group col-12 col-lg-6">
+                      <label for="llojiprokurimit">Lloji i prokurimit</label>
+                      <input type="text" class="form-control" name="llojiprokurimit" id="llojiprokurimit" placeholder="Lloji i prokurimit" required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label for="aktprokurimit">Aktiviteti i prokurimit</label>
+                      <input type="text" class="form-control" name="aktivitetiprokurimit" id="aktprokurimit" placeholder="Aktiviteti i prokurimit" required>
+                    </div>
+                  </div><!--End for Prokurimi part -->
+
+                  <!-- Datat -->
+                  <div class="form-row datat">
+                    <div class="form-group col-12">
+                      <h2>Datat:</h2>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label for="d-inicimit">Data e inicimit te aktivitetit te prokurimit</label>
+                      <input type="text" class="form-control" name="datainicimit" id="d-inicimit" placeholder="03.03.2018" required>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label for="d-publikimit">Data e publikimit te shpalljes</label>
+                      <input type="text" class="form-control" name="datapublikimit" id="d-publikimit" placeholder="03.03.2018" required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label for="d-nenshkrimit">Data e nenshkrimit te kontrates</label>
+                      <input type="text" class="form-control" name="datanenshkrimit" id="d-nenshkrimit" placeholder="03.03.2018" required>
+                    </div>
+                    <div class="form-group col-lg-12 implementimiK">
+                      <div class="row">
+                        <div class="form-group col-lg-6" required>
+                          <label for="a-implementimit">Afatet per implementimin e kontrates</label>
+                          <input type="text" class="form-control" name="afatiimplementimit" id="a-implementimit" placeholder="03.03.2018" required>
+                        </div>
+                        <div class="form-group col-lg-6">
+                          <input type="text" class="form-control" name="aafatiimplementimit"id="d-implementimit" placeholder="03.03.2018" required>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="form-group col-lg-12">
+                      <label for="d-nenshkrimit">Data e permbylljes se kontrates(data e pranimit te perkohshem/preliminar)</label>
+                      <input type="text" class="form-control" name="datapermbylljes" id="d-permbylljes" placeholder="03.03.2018" required>
+                    </div>
+                  </div><!--End of Datat part -->
+
+                  <!-- Cmimet -->
+                    <div class="form-row cmimet">
+                      <div class="form-group col-12">
+                        <h2>Çmimi dhe te dhenat tjera:</h2>
+                      </div>
+                      <div class="form-group col-lg-6">
+                        <label for="cmimikontrates">Çmimi i kontrates(duke perfshire te gjitha taksat)</label>
+                        <input type="text" class="form-control" name="cmimikontrates" id="cmimikontrates" placeholder="Çmimi i kontrates" required>
+                      </div>
+                      <div class="form-group col-lg-6">
+                        <label for="cmimitotal">Çmimi total i paguar per kontrates</label>
+                        <input type="text" class="form-control" name="cmimitotal" id="cmimitotal" placeholder="Çmimi total" required>
+                      </div>
+                      <div class="form-group col-lg-12">
+                        <label for="emri-mbiemriKontrates">Emri i te cilit i eshte dhen kontrata</label>
+                        <input type="text" class="form-control" name="emrikontrates" id="emri-mbiemriKontrates" placeholder="Emri dhe mbiemri " required>
+                      </div>
+                    </div><!--End for Cmimet part -->
+
+                  <button type="submit" class="btn btn-primary">Dergo</button>
+                  <button type="submit" class="btn btn-default">Fshij</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+ <% include partials/footer %>

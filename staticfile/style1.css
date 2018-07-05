@@ -1,0 +1,35 @@
+body{
+  line-height: 2;
+}
+.form-content{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#kontrata-heading{
+  color: #007bff;
+  font-size: 30px;
+}
+h2{
+  font-size: 20px;
+  font-weight: bold;
+}
+.prokurimi, .datat{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#d-implementimit{
+  margin-top: 40px;
+}
+.btn{
+  width: 40%;
+  margin-right: 3%;
+  text-transform: uppercase;
+}
+.table-content{
+  margin-top:50px;
+}
+table th{
+  font-size: 14px;
+  line-height: 1.5;
+}
